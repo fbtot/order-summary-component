@@ -5,33 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap" rel="stylesheet"> 
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="page">
+    <h1>Order summary card</h1>
+    <article class="summary-card">
 
-  Order Summary
+      <img src="/images/illustration-hero.svg" class="summary-card__img" alt="Order card image">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="summary-card-content">
+        <h2 class="summary-card__title">Order Summary</h2>
+        <p class="summary-card__text">  You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      
+        <div class="summary-card__order-content-container">
+          <img src="/images/icon.svg" alt="" class="summary-card__order-icon">
+          <div class="summary-card__order-content">
+            <p class="summary-card__order-type">Annual Plan</p>
+            <p class="summary-card__price"></p>
+            <a href="#" class="summary-card__change"></a>
+          </div>
+        </div> <!-- end .summary-card__order-content-container -->
 
-  Annual Plan
-  $59.99/year
+          <a href="#" class="summary-card__button">Proceed to Payment</a>
+          <a href="#" class="summary-card__cancel">Cancel order</a>
+      </div> <!-- end .summary-card-container -->
 
-  Change
+    </article> <!-- end .summary-card -->
+  </main> <!-- end .page -->
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
