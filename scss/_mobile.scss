@@ -1,2 +1,14 @@
 @use "_variables" as *;
 @use "_temporary";
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-family;
+  font-weight: 500;
+  background: $pale-blue;
+}
+
+h1 {
+  display: none;
+}

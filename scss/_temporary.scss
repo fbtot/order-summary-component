@@ -1,1 +1,11 @@
 @use "_variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  width: 375px;
+  padding: 2rem;
+}
