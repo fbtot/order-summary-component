@@ -30,7 +30,7 @@ h1 {
   overflow: hidden;
   border-radius: 1rem;
   text-align: center;
-  background: #f5f7ff;
+  background: white;
 }
 
 .summary-card__img {
@@ -39,18 +39,58 @@ h1 {
 }
 
 .summary-card-content {
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .summary-card__title {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .summary-card__text {
   font-size: 0.9rem;
   line-height: 1.8em;
-  padding: 0 0.2rem;
+  padding: 0 1rem;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+.summary-card__order-content-container {
+  display: flex;
+  font-size: 0.9rem;
+  background: #f5f7ff;
+  border-radius: 0.5rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem;
+  text-align: left;
+}
+.summary-card__order-content-container > * {
+  text-align: left;
+}
+
+.summary-card__order-price-container {
+  margin-right: auto;
+  margin-left: 1.3rem;
+}
+
+.summary-card__order-type {
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 0.3rem;
+  text-align-last: left;
+}
+
+.summary-card__change {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3829e0;
+}
+.summary-card__change:hover {
+  color: #7280a7;
 }
 
 /*# sourceMappingURL=style.css.map */

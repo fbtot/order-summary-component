@@ -23,7 +23,7 @@ p {
   overflow: hidden;
   border-radius: 1rem;
   text-align: center;
-  background: $very-pale-blue;
+  background: white;
 }
 
 .summary-card__img {
@@ -32,17 +32,59 @@ p {
 }
 
 .summary-card-content {
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .summary-card__title {
   @extend %m0p0;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .summary-card__text {
   font-size: 0.9rem;
   line-height: 1.8em;
-  padding: 0 0.2rem;
+  padding: 0 1rem;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+.summary-card__order-content-container {
+  display: flex;
+  font-size: 0.9rem;
+  background: $very-pale-blue;
+  border-radius: 0.5rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem;
+  text-align: left;
+
+  > * {
+    text-align: left;
+  }
+}
+
+.summary-card__order-price-container {
+  margin-right: auto;
+  margin-left: 1.3rem;
+}
+
+.summary-card__order-type {
+  font-weight: 900;
+  color: $dark-blue;
+  margin-bottom: 0.3rem;
+  text-align-last: left;
+}
+
+.summary-card__change {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $bright-blue;
+
+  &:hover {
+    color: $desaturated-blue;
+  }
 }
