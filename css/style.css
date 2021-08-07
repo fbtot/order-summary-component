@@ -1,10 +1,15 @@
+h1, p, .summary-card__title {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
-  width: 375px;
+  width: 392px;
   padding: 2rem;
 }
 
@@ -14,10 +19,38 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   background: #e0e8ff;
+  color: #7280a7;
 }
 
 h1 {
   display: none;
+}
+
+.summary-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  text-align: center;
+  background: #f5f7ff;
+}
+
+.summary-card__img {
+  display: block;
+  width: 100%;
+}
+
+.summary-card-content {
+  padding: 2rem;
+}
+
+.summary-card__title {
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.summary-card__text {
+  font-size: 0.9rem;
+  line-height: 1.8em;
+  padding: 0 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

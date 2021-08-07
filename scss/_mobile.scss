@@ -7,8 +7,42 @@ body {
   font-family: $font-family;
   font-weight: 500;
   background: $pale-blue;
+  color: $desaturated-blue;
 }
 
 h1 {
   display: none;
+  @extend %m0p0;
+}
+
+p {
+  @extend %m0p0;
+}
+
+.summary-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  text-align: center;
+  background: $very-pale-blue;
+}
+
+.summary-card__img {
+  display: block;
+  width: 100%;
+}
+
+.summary-card-content {
+  padding: 2rem;
+}
+
+.summary-card__title {
+  @extend %m0p0;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.summary-card__text {
+  font-size: 0.9rem;
+  line-height: 1.8em;
+  padding: 0 0.2rem;
 }
