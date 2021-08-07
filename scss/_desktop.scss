@@ -4,4 +4,34 @@
   html {
     font-size: $desktop-font-size;
   }
+
+  body {
+    background-image: url(/images/pattern-background-desktop.svg) 0 0 no-repeat;
+  }
+
+  .summary-card-content {
+    padding: 3rem 3rem;
+  }
+
+  .summary-card__title {
+    letter-spacing: normal;
+    margin-bottom: 1.2rem;
+  }
+
+  .summary-card__text {
+    line-height: 1.6em;
+    letter-spacing: normal;
+    margin-bottom: 1.6rem;
+  }
+
+  .summary-card__order-content-container {
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 2.3rem;
+  }
+
+  .summary-card__button {
+    padding: 1rem;
+    margin-bottom: 2.1rem;
+    font-size: 0.9rem;
+  }
 }

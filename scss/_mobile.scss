@@ -48,7 +48,7 @@ p {
 .summary-card__title {
   @extend %m0p0;
   letter-spacing: -0.07em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   font-weight: 900;
   color: $dark-blue;
   font-size: 1.7rem;
@@ -118,7 +118,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   color: $desaturated-blue;
-  font-size: 1rem;
 
   &:hover {
     color: $dark-blue;
