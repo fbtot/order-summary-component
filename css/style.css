@@ -3,28 +3,22 @@ h1, p, .summary-card__title {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   font-size: 14.4px;
-  width: 385px;
-  padding: 2rem;
 }
 
-@media screen and (min-width: 500px) {
-  html {
-    width: calc(450px + 4rem);
-  }
-}
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   background: #e0e8ff url(/images/pattern-background-mobile.svg) top -40px left 0 no-repeat;
+  background-size: 100%;
   color: #7280a7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button, .summary-card__button {
@@ -39,11 +33,16 @@ h1 {
   display: none;
 }
 
+.page {
+  width: 375px;
+}
+
 .summary-card {
   overflow: hidden;
   border-radius: 1.3rem;
   text-align: center;
   background: white;
+  margin: 1.5rem;
 }
 
 .summary-card__img {
@@ -134,7 +133,13 @@ h1 {
   }
 
   body {
-    background-image: url(/images/pattern-background-desktop.svg) 0 0 no-repeat;
+    background: #e0e8ff url(/images/pattern-background-desktop.svg) top -40px left 0 no-repeat;
+    background-size: 100%;
+    margin: 0;
+  }
+
+  .page {
+    width: 450px;
   }
 
   .summary-card-content {

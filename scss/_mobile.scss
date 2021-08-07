@@ -1,6 +1,10 @@
 @use "sass:color";
 @use "_variables" as *;
-@use "_temporary";
+// @use "_temporary";
+
+html {
+  font-size: $mobile-font-size;
+}
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -9,7 +13,12 @@ body {
   font-weight: 500;
   background: $pale-blue url(/images/pattern-background-mobile.svg) top -40px left
     0 no-repeat;
+  background-size: 100%;
   color: $desaturated-blue;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -29,11 +38,16 @@ p {
   @extend %m0p0;
 }
 
+.page {
+  width: 375px;
+}
+
 .summary-card {
   overflow: hidden;
   border-radius: 1.3rem;
   text-align: center;
   background: white;
+  margin: 1.5rem;
 }
 
 .summary-card__img {
