@@ -90,7 +90,8 @@ h1 {
   color: #3829e0;
 }
 .summary-card__change:hover {
-  color: #7280a7;
+  color: #6b61ef;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
