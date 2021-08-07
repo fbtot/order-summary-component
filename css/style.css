@@ -22,6 +22,15 @@ body {
   color: #7280a7;
 }
 
+.button, .summary-card__button {
+  background: #3829e0;
+  padding: 1.1rem;
+  border-radius: 0.7rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
 h1 {
   display: none;
 }
@@ -46,6 +55,7 @@ h1 {
   letter-spacing: -0.05em;
   margin-bottom: 1rem;
   font-weight: 900;
+  color: #1f2f56;
 }
 
 .summary-card__text {
@@ -66,6 +76,7 @@ h1 {
   justify-content: space-between;
   padding: 1.1rem;
   text-align: left;
+  margin-bottom: 1.4rem;
 }
 .summary-card__order-content-container > * {
   text-align: left;
@@ -92,6 +103,28 @@ h1 {
 .summary-card__change:hover {
   color: #6b61ef;
   text-decoration: none;
+}
+
+.summary-card__button {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 1rem 1rem rgba(107, 97, 239, 0.25);
+}
+.summary-card__button:hover {
+  background: #6b61ef;
+}
+
+.summary-card__cancel {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #7280a7;
+  font-size: 0.95rem;
+}
+.summary-card__cancel:hover {
+  color: #1f2f56;
 }
 
 /*# sourceMappingURL=style.css.map */

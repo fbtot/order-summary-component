@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "_variables" as *;
 @use "_temporary";
 
@@ -11,6 +12,12 @@ body {
 }
 
 .button {
+  background: $bright-blue;
+  padding: 1.1rem;
+  border-radius: 0.7rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 h1 {
@@ -43,6 +50,7 @@ p {
   letter-spacing: -0.05em;
   margin-bottom: 1rem;
   font-weight: 900;
+  color: $dark-blue;
 }
 
 .summary-card__text {
@@ -63,6 +71,7 @@ p {
   justify-content: space-between;
   padding: 1.1rem;
   text-align: left;
+  margin-bottom: 1.4rem;
 
   > * {
     text-align: left;
@@ -90,5 +99,30 @@ p {
   &:hover {
     color: $warmer-blue;
     text-decoration: none;
+  }
+}
+
+.summary-card__button {
+  @extend .button;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 1rem 1rem color.adjust($warmer-blue, $alpha: -0.75);
+
+  &:hover {
+    background: $warmer-blue;
+  }
+}
+
+.summary-card__cancel {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: $desaturated-blue;
+  font-size: 0.95rem;
+
+  &:hover {
+    color: $dark-blue;
   }
 }
