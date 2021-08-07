@@ -5,7 +5,13 @@
 }
 
 html {
-  font-size: $base-font-size;
-  width: 392px;
+  font-size: $mobile-font-size;
+  width: 385px;
   padding: 2rem;
+}
+
+@media screen and(min-width:$desktop-width) {
+  html {
+    width: calc(450px + 4rem);
+  }
 }

@@ -7,8 +7,11 @@ $dark-blue: hsl(223, 47%, 23%);
 $warmer-blue: hsl(244, 82%, 66%);
 
 // Typography
-$base-font-size: 16px;
+$mobile-font-size: 14.4px;
+$desktop-font-size: 16px;
 $font-family: "Red Hat Display", sans-serif;
+
+$desktop-width: 500px;
 
 %m0p0 {
   margin: 0;

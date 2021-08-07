@@ -1,1 +1,7 @@
 @use "_variables" as *;
+
+@media screen and(min-width:$desktop-width) {
+  html {
+    font-size: $desktop-font-size;
+  }
+}
