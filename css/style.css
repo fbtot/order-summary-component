@@ -112,6 +112,7 @@ h1 {
   font-weight: 900;
   margin-bottom: 1.8rem;
   box-shadow: 0 1rem 1rem rgba(107, 97, 239, 0.25);
+  transition: background 0.2s ease-in-out;
 }
 .summary-card__button:hover {
   background: #6b61ef;
@@ -122,6 +123,7 @@ h1 {
   text-decoration: none;
   text-transform: capitalize;
   color: #7280a7;
+  transition: color 0.2s ease-in-out;
 }
 .summary-card__cancel:hover {
   color: #1f2f56;

@@ -121,6 +121,7 @@ p {
   font-weight: 900;
   margin-bottom: 1.8rem;
   box-shadow: 0 1rem 1rem color.adjust($warmer-blue, $alpha: -0.75);
+  transition: background 0.2s ease-in-out;
 
   &:hover {
     background: $warmer-blue;
@@ -132,6 +133,7 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   color: $desaturated-blue;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: $dark-blue;
